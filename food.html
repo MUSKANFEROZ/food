@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <style>
+      ul > li {
+        display: inline-flex;
+        width: 100px;
+        font-size: 11px;
+        color: white;
+      }
+
+      .main {
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+
+      ul {
+        background-color: rgb(0, 30, 139);
+        box-shadow: 2x 2px 2px bisque;
+        /* position: fixed;
+        top: 0;
+        width: 810px; */
+      }
+
+      /* button{
+        border-radius: 20px;
+        display: inline-flex;
+        font-size: 11px;
+        border: none ;
+       background-color: teal;
+       border-color: black;
+    } */
+      .btn {
+        border-radius: 20px;
+        display: inline-flex;
+        font-size: 11px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 4px;
+        color: white;
+      }
+
+      i {
+        color: white;
+      }
+
+      h1 {
+        display: inline-flex;
+        font-size: 11px;
+      }
+
+      .btn {
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 20px;
+        padding-bottom: 0px;
+        /* margin-top: 11px; */
+        /* padding-top: 10px; */
+      }
+
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        /* padding-bottom: 10px; */
+      }
+      .card-container {
+        display: flex !important;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        height: 100px;
+      }
+      .position {
+        position: relative;
+        bottom: 300px;
+        margin-left: 70px;
+        font-size: 30px;
+        color: white;
+      }
+      .pos {
+        margin-left: 700px;
+        position: relative;
+        bottom: 400px;
+        font-size: 30px;
+        color: white;
+      }
+       .con{
+        position: relative;
+        bottom: 330px;
+        font-size: 30px;
+        color: white;
+        margin-left: 10px
+        
+       }
+       .nav:hover{
+        transform: scale(1.1);
+        transition: 1s;
+        border-radius: 30px;
+      
+       }
+       
+    </style>
+  </head>
+
+  <body>
+    <div style="background-color: rgb(0, 30, 139); height: 510px">
+      <div>
+        <ul>
+          <div class="menu mx-5">
+            <h1 class="fs-3 fw-bolder text-light">Booking.com</h1>
+            <button
+              type="button"
+              class="btn btn-outline-light"
+              style="
+                padding-top: 5px;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-bottom: 8px;
+                margin-top: 5px;
+              "
+            >
+              Sign in
+            </button>
+          </div>
+
+          <button type="button" class="btn btn-outline-dark">
+            <i class="fa-solid fa-bed" style="padding-top: 3px"> </i>
+            <li style="padding-left: 6px; padding-right: 6px">Stays</li>
+          </button>
+          <!-- <button> <i class="fa-solid fa-bed"style="padding-top: 3px;"  ></i> <li  >Stays</li></button> -->
+          <i class="fa-solid fa-plane" style="padding-left: 20px"></i>
+          <li>Flights</li>
+          <i class="fa-solid fa-car"></i>
+          <li>Cars rentals</li>
+          <i class="fa-solid fa-cube"></i>
+          <li>Attractions</li>
+          <i class="fa-solid fa-layer-group"></i>
+          <li>Airpot taxis</li>
+        </ul>
+        <br /><br />
+        <div style="display: flex; justify-content: space-between" class="mx-5">
+          <div style="color: white" class="mt-5 ms-4">
+            <h2 class="fw-bold fs-1">Sign in, save money</h2>
+            <p class="fs-4">
+              Save 10% or more at participating properties. Just look <br />for
+              the blue Genius label.
+            </p>
+            <br />
+            <button
+              type="button"
+              class="btn btn-primary btn-lg fs-6 p-2 fw-bolder rounded-1"
+            >
+              Sign in or Register
+            </button>
+          </div>
+          <div>
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/xphoto/300x300/316543397.png?k=c42a7cb04035fb44ee49b1f539e6b2bfb745955a8fe8df2db662c938077cd021&o="
+              width="300px"
+              class="mx-3"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- center 3 button -->
+      <div class="container text-center mt-5">
+        <div class="row align-items-start">
+          <div class="col d-grid">
+            <button
+              class="btn btn-primary p-3 fw-bold fs-6 rounded-5"
+              type="button"
+            >
+              Dubai
+            </button>
+          </div>
+          <div class="col d-grid">
+            <button
+              class="btn bg-warning p-3 fw-bold fs-6 rounded-5"
+              type="button"
+            >
+              Check-in date -- Check-out date
+            </button>
+          </div>
+          <div class="col d-grid">
+            <button
+              class="btn bg-secondary p-3 fw-bold fs-6 rounded-5"
+              type="button"
+            >
+              2 adults . 0 children . 1 room
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- checkbox -->
+      <div class="form-check ms-5 mt-2 fs-6">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="flexCheckChecked"
+          checked
+        />
+        <label class="form-check-label" for="flexCheckChecked">
+          I'm looking for an entire home or apartment
+        </label>
+      </div>
+
+      <!-- offer -->
+      <div class="mx-5 mt-5 mr-4">
+        <h2 class="fw-bold">Offers</h2>
+        <p class="fs-6">Promotions, deals and special offers for you</p>
+        <div class="d-flex justify-content-between">
+          <div class="w-50 position-relative">
+            <img
+              class="rounded object-fit-cover"
+              src="https://r-xx.bstatic.com/xdata/images/xphoto/714x300/293799350.jpeg?k=8a6f4e24c37096fbdcd3c3d30c9f3dcea15ce35751448466decf791918012a64&o="
+              height="150"
+              width="99%"
+            />
+            <div class="position-absolute top-0 p-3 text-light">
+              <h4>New year, new adventures</h4>
+              <p>
+                Save 15% or more when you book and stay before <br />
+                1 April 2024
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg fs-6 p-2 rounded-1"
+              >
+                Find Early 2024 Deals
+              </button>
+            </div>
+          </div>
+          <div class="w-50 position-relative">
+            <img
+              class="rounded object-fit-cover"
+              src="https://r-xx.bstatic.com/xdata/images/xphoto/714x300/316455553.jpeg?k=33c0362560b6aa7ff9ba2afc3ef8d120728107cf56cd1c006fcf0da8c1821735&o="
+              height="150"
+              width="99%"
+            />
+            <div class="position-absolute top-0 p-3 text-light">
+              <h4>New year, new adventures</h4>
+              <p>
+                Save 15% or more when you book and stay before <br />
+                1 April 2024.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary btn-lg fs-6 p-2 rounded-1"
+              >
+                Find Early 2024 Deals
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Explore Pakistan  -->
+      <div>
+        <h5 class="fw-bold ms-5 fs-3 mt-5">Explore Pakistan</h5>
+        <p class="ms-5">These popular destinations have a lot to offer</p>
+
+        <!-- card -->
+        <div class="card-container">
+          <div class="card" style="width: 10rem">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/city/170x136/724981.jpg?k=d2a74ca55c128d783c4a6836713abe2ef7874ba2cc276b9f671df017ff24da19&o="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Islamabad</h5>
+              <p class="card-text">296 properties</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/city/170x136/688249.jpg?k=42442ea62b97c8d6b57b4b6171b406e6778a9b160b4ce0c69f53726b397c7d3e&o="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lahore</h5>
+              <p class="card-text">308 properties</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/city/170x136/640442.jpg?k=90687d20998ee01829027c5e6396a0b8c6d9198bb76bd5ffc7c49c5b779e18ae&o="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Karachi</h5>
+              <p class="card-text">167 properties</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/country/170x136/364.jpg?k=e1060912bc701eda5db297a286037d2b2e3898e34362d7d22d8b754a260ea2fc&o="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Murree</h5>
+              <p class="card-text">57 properties</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem">
+            <img
+              src="https://q-xx.bstatic.com/xdata/images/country/170x136/364.jpg?k=e1060912bc701eda5db297a286037d2b2e3898e34362d7d22d8b754a260ea2fc&o="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nathia gali</h5>
+              <p class="card-text">3 properties</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem">
+            <img
+              src="https://r-xx.bstatic.com/xdata/images/city/170x136/633457.jpg?k=3ad8da46014cdb4e1c32103af31901b257218fc4c19395e1bafca75e000f0897&o="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rawalpindi</h5>
+              <p class="card-text">308 properties</p>
+            </div>
+          </div>
+        </div>
+        <!-- destination -->
+      </div>
+      <div style="margin-top: 150px">
+        <h5 class="fw-bold ms-5 fs-3 mt-5">Trending destinations</h5>
+        <p class="ms-5">Most popular choices for travellers from Pakistan</p>
+        <img
+          src="https://cf.bstatic.com/xdata/images/city/600x600/688249.jpg?k=42442ea62b97c8d6b57b4b6171b406e6778a9b160b4ce0c69f53726b397c7d3e&o="
+          width="550px"
+          height="330px"
+          alt=""
+          style="border-radius: 30px; margin-left: 40px"
+        />
+        <p class="position">𝗟𝗔𝗛𝗢𝗥𝗘</p>
+      </div>
+
+      <img
+        src="https://cf.bstatic.com/xdata/images/city/600x600/724981.jpg?k=d2a74ca55c128d783c4a6836713abe2ef7874ba2cc276b9f671df017ff24da19&o=" class="img"
+        width="550px"
+        height="330px"
+        alt=""
+        style="border-radius: 30px; margin-left: 650px; margin-top: -500px"
+      />
+      <p class="pos">𝗜𝘀𝗹𝗮𝗺𝗮𝗯𝗮𝗱</p>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div style="margin-left: 80px; width: 370px;margin-top: -90px;">
+        
+            <img src="https://cf.bstatic.com/xdata/images/city/600x600/977220.jpg?k=ee4b7b42c35b8cbf09c8ddb7630092b40cd706fec153c41904ed6e252a883938&o=" class="card-img-top" width="400px" style="border-radius: 30px; border: 1px solid orangered;" class="hov" alt="...">
+            <h1 class="con">Dubai <img src  ="data:image/png;base64,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" alt="" style="width: 40px; padding-left: 10px; height: 20px;margin-top: 10px;" ></h1>
+       
+        </div>
+        
+        <div style="margin-left: 50px; width: 370px;margin-top: -90px; border-radius: 20px;">
+         
+            <img src="https://cf.bstatic.com/xdata/images/city/600x600/640442.jpg?k=90687d20998ee01829027c5e6396a0b8c6d9198bb76bd5ffc7c49c5b779e18ae&o=" class="card-img-top" width="400px"  style="border-radius: 30px; border: 1px solid orangered;" class="hov" alt="...">
+           <h1  class="con">Karachi   <img src  ="data:image/png;base64,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" alt="" style="width: 40px; padding-left: 10px; height: 20px;margin-top: 10px;" ></h1>
+        
+        </div>
+        <div  style="margin-left: -100px; width: 370px;margin-top: -90px;margin-left: 10px;">
+       
+            <img src="https://cf.bstatic.com/xdata/images/city/600x600/688591.jpg?k=9a550fedccb750cfa3f2e8eaf507287d4007f21def68e6566cc00b200946e876&o=" class="card-img-top" width="400px"  style="border-radius: 30px; border: 1px solid orangered;" class="hov" alt="...">
+            <h1  class="con">Makkah  <img src  ="data:image/png;base64,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" alt="" style="width: 40px; padding-left: 10px; height: 20px;margin-top: 10px;margin-right: -100px;" ></h1>
+        </div>
+        <div>
+          <h1 style="margin-left: 50px;font-size: 25px;margin-top: -80px;">Browse by property type</h1>
+          <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/57584488.jpeg?k=d8d4706fc72ee789d870eb6b05c0e546fd4ad85d72a3af3e30fb80ca72f0ba57&o=" width="300px" alt="" style="margin-left: 50px;border-radius: 30px;">
+        
+        </div>
+        <div>
+   <h1 style="margin-top: 300px;margin-left: -380px; font-size: 20px;">Hotels</h1>
+  </div>
+  <div>
+
+    <img src="https://q-xx.bstatic.com/xdata/images/hotel/263x210/119467716.jpeg?k=f3c2c6271ab71513e044e48dfde378fcd6bb80cb893e39b9b78b33a60c0131c9&o=" width="300px" alt="" style="margin-left: -480px;border-radius: 30px;margin-top: 35px;">
+  
+  </div>
+  
+  <div>
+
+</div>
+<h1 style="margin-left: -50px; font-size: 20px;margin-top: -30px;">Apartments</h1>
+<div>
+
+  <img src="https://r-xx.bstatic.com/xdata/images/xphoto/263x210/45450084.jpeg?k=f8c2954e867a1dd4b479909c49528531dcfb676d8fbc0d60f51d7b51bb32d1d9&o=" width="300px" alt="" style="margin-left: -123px;border-radius: 30px;margin-top: -440px;">
+
+</div>
+
+<div>
+
+</div>
+<h1 style="margin-left: 250px; font-size: 20px;margin-top: -80px;">Resorts</h1>
+<!-- <h1 style="margin-left:995px; font-size: 20px;margin-top:-100px;">Villas</h1> -->
+<div>
+
+  <img src="https://r-xx.bstatic.com/xdata/images/hotel/263x210/100235855.jpeg?k=5b6e6cff16cfd290e953768d63ee15f633b56348238a705c45759aa3a81ba82b&o=" width="280px" alt="" style="margin-left: 970px;border-radius: 30px;margin-top: -580px;">
+
+</div>
+
+<div>
+   
+</div>
+<!-- <h1 style="margin-left:80%; font-size: 20px;margin-top: -150px;">Villas</h1> -->
+<div >
+  <div style="margin-left: -800px;" >
+<img src="https://cf.bstatic.com/xdata/images/xphoto/540x405/296361238.jpg?k=5781de6463951b415b04e42ff2a5d23ad6bb1c5500f15c192212667573db4331&amp;o= " width="500px" alt="" class="nav" style="border-radius: 30px;" >
+  </div>
+<div style="margin-left: -280px;margin-top: -400px;" >
+  
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card h-80 ">
+        <img src="https://cf.bstatic.com/xdata/images/xphoto/720x405/292260574.jpg?k=efc8e339ea66514c3b64c5bc891f1608d22a40eb23b853bc0c9ecb93c541ef10&o=" width="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">6 best ryokans in Japan to rejuvenate yourself</h5>
+         
+          <p class="card-text">Discover unmissable ryokans to relax and unwind in style.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-80">
+        <img src="https://cf.bstatic.com/xdata/images/xphoto/540x405/290483794.jpg?k=916f7bac0ccdb08efcb269ad29cc10816ab66cd1671359066d23d32fb17b5c39&o=" class="card-img-top" height="200px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">7 best places in  Asia to  celebrate Cristmas</h5>
+          <p class="card-text">Discover unmissable ryokans to relax and unwind in style.</p>
+        </div>
+      </div>
+    </div>
+  
+</div>
+</div>
+<h3 style="margin-left: -790px;color: white;margin-top: -80px; " class="fw-bolder">New Year’s Eve in New York City</h3>
+<h5 style="margin-left: -790px;color: white;font-size: 18px; ">ring in the new year with iconic moments <br> and unforgattable memories in new York city </h5>
+
+<br>
+<div style="margin-left: -800px;"> 
+  <h4 style="margin-left: 10px;margin-top: 30px;" class="fw-bolder">Stay at our top unique properties</h4>
+
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-60">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/255854447.webp?k=f9c9d47f18b3156fdcc5596749d137f35e3cf4962a8d3d37d69be0066ec9bfc3&o=" class="card-img-top" height="240px"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Findland lillanded</h5>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-60">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/237686104.webp?k=3813d2af0058b6676f19e8d707977dd086b6fd873d46dd9c19a8aaba24f813ff&o=" class="card-img-top" height="240px"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Apartment by Adrez</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-60">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/228714298.webp?k=2e88556aac50ed7e31bdc4f399c385b1c2b3208d8a3c3fc622e770bc6d9b0c98&o=" class="card-img-top" height="240px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Harbor view</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-60">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/square600/236967822.webp?k=767dbb831d2109499cf73d2880a88e021a73781d7206cb812a328fd344756951&o=" class="card-img-top" height="240px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Orinate palce apartment</h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<br>
+
+    
+    <div style="margin-left: -800px;"> 
+      <h4 style="margin-left: 10px;margin-top: 30px;" class="fw-bolder">Homes guests love
+      
+        </h4>
+     
+    
+      
+    
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-60">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/square600/13125860.webp?k=35b70a7e8a17a71896996cd55d84f742cd15724c3aebaed0d9b5ba19c53c430b&o=" class="card-img-top" height="240px"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Findland lillanded</h5>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-60">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/square600/121402222.webp?k=f7f266ab09f90ddea4464309eca14d79429afe4218ced6887cb52f82c42c03dc&o=" class="card-img-top" height="240px"  alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Apartment by Adrez</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-60">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/square600/87428762.webp?k=de5db8fe94cbfe08d3bf16d3c86def035fd73b43ee497cffe27b03363764e0e2&o=" class="card-img-top" height="240px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Harbor view</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-60">
+            <img src="https://cf.bstatic.com/xdata/images/hotel/square600/95058973.webp?k=c4092495705eab3fad626e8e1a43b1daf7c623e4ea41daf26a201b4417a71709&o=" class="card-img-top" height="240px" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Orinate palce apartment</h5>
+              <p class="card-text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<br>
+<div style="margin-left: -750px;margin-right: 50px;  " >
+<div class="card">
+ 
+  <div class="card-body">
+    <img src="https://t-cf.bstatic.com/design-assets/assets/v3.109.0/illustrations-traveller/GlobeGeniusBadge@2x.png" width="200px" alt="">
+    <h5 style="margin-left: 200px;margin-top: -150px;">Get instant discounts</h5>
+    <p style="margin-left: 200px;">Simply sign into your Booking.com account and look for the blue Genius logo to save</p>
+    <!-- <button type="button" class="btn btn-outline-info " style="margin-left: 200px; width: 60px;">Info</button> -->
+    <button
+    type="button"
+    class="btn btn-primary btn-lg fs-6 p-2 fw-bolder rounded-1" style="margin-left: 200px;" 
+  >
+    Sign in 
+  </button>
+  <button
+    type="button"
+    class="btn btn-primary btn-lg fs-6 p-2 fw-bolder rounded-1"  
+  >
+    Register
+  </button>
+    <!-- <a href="#" style="margin-left: 200px;" >sign in</a> -->
+  </div>
+  <br>
+</div>
+
+</div>
+<br>
+
+
+
+<div style="margin-left: -700px;">
+<a target="_isblank" href="https://www.booking.com/booking-home/index.en-gb.html?label=en-pk-booking-desktop-LQuBZk0KRa2eiXyxtOFbywS652796017653%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-28336000%3Alp1011081%3Ali%3Adec%3Adm&amp;gclid=CjwKCAjw48-vBhBbEiwAzqrZVF8-CGO46XX6yBBRk3RwGBp7fqgHJ9dJjOzsO2fe39cLLZ7jZmRoAxoCLDgQAvD_BwE&amp;aid=2311236" class="a83ed08757 b8e920e088"><div class="d39c27f89b"></div><div class="d875fc0c4c"><div data-testid="wcu_bh_banner_desktop--content" class="af8fbdf136 bb44aa69aa"><div><div class="de7f9979e1"><ul class="a2172b8d6f"><li class="db46cc1a0a"><span class="fc7d18e9e4">apartments</span></li><li class="db46cc1a0a"><span class="fc7d18e9e4">villas</span></li><li class="db46cc1a0a"><span class="fc7d18e9e4">aparthotels</span></li><li class="db46cc1a0a"><span class="fc7d18e9e4">holiday homes</span></li><li class="db46cc1a0a"><span class="fc7d18e9e4">cottages</span></li><li class="db46cc1a0a"><span class="fc7d18e9e4">homes</span></li><li class="db46cc1a0a"><span class="fc7d18e9e4">apartments</span></li></ul></div></div><span> for your next trip</span></div><span data-testid="wcu_bh_banner_desktop--button" class="a83ed08757 c21c56c305 bf0537ecb5 ab98298258 deab83296e af7297d90d ccbae5d425"><span class="e4adce92df">Discover homes</span></span></div><div class="a0670806ef"><picture class="e5a3812a75"><img class="e3fa9175ee d354f8f44f" src="https://cf.bstatic.com/psb/capla/static/js/../../static/media/bh_aw_cpg_main_image.b4347622.png" role="presentation" loading="lazy"></picture></div></a>
+<h4 style="margin-left: 700px;margin-top: -450px;background-color: lightslategray; color: white; border-radius: 20px;" class="fw-bolder">find homes <br> of your next trip</h4>
+</div>
+
+<br>
+
+
+<footer class="bg-body-tertiary text-center" style="margin-top: 500px; margin-left: -800px;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Images -->
+    <section class="">
+      <div class="row">
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div data-mdb-ripple-init
+            class="bg-image hover-overlay shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp" class="w-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div data-mdb-ripple-init
+            class="bg-image hover-overlay shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp" class="w-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div data-mdb-ripple-init
+            class="bg-image hover-overlay shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp" class="w-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div data-mdb-ripple-init
+            class="bg-image hover-overlay shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp" class="w-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div data-mdb-ripple-init
+            class="bg-image hover-overlay shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp" class="w-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+          <div data-mdb-ripple-init
+            class="bg-image hover-overlay shadow-1-strong rounded"
+            data-ripple-color="light"
+          >
+            <img src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp" class="w-100" />
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Images -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-5" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2020 Copyright:
+    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
